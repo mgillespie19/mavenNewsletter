@@ -1,0 +1,64 @@
+// Nuclear reset
+/* fix for chrome not displaying fonts correctly */
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+        width: 40%;
+        margin: auto;
+        display: block;
+        margin-top: 10px
+      }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+HTML{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+}
+
+input{
+  background-color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.font-display{
+  font-family: 'Work Sans', serif;
+}
+
+.latest-newsletter-table a{
+  text-decoration: underline;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.latest-newsletter-table td{
+    padding: 1rem 0;
+}
+
+.latest-newsletter-table h3 > a{
+  font-size: 1.5rem;
+}
+
+.latest-newsletter-table h2{
+  font-size: 1.75rem;
+}
+
+.latest-newsletter-table h4{
+  font-size: 1.25rem;
+}

@@ -1,0 +1,1216 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Funded & Hiring</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+
+      /*All the styling goes here*/
+
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%;
+      }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top;
+      }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%;
+      }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 685px;
+        padding: 10px;
+        width: 685px;
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 685px;
+        padding: 10px;
+      }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%;
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+      }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center;
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 550;
+        text-align: center;
+        text-transform: none;
+        margin-bottom: 10px;
+        font-family: "Times New Roman"
+      }
+
+      h2 {
+        text-align:center;
+      }
+
+      h3 {
+        /*color: #7F00FF;*/
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin: 5px 0 0 0;,
+      }
+      ,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px;
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline;
+      }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto;
+      }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center;
+      }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize;
+      }
+
+      .btn-primary table td {
+        background-color: #3498db;
+      }
+
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff;
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0;
+      }
+
+      .first {
+        margin-top: 0;
+      }
+
+      .align-center {
+        text-align: center;
+      }
+
+      .align-right {
+        text-align: right;
+      }
+
+      .align-left {
+        text-align: left;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      .mt0 {
+        margin-top: 0;
+      }
+
+      .mb0 {
+        margin-bottom: 0;
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0;
+      }
+
+      .powered-by a {
+        text-decoration: none;
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0;
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important;
+        }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important;
+        }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important;
+        }
+        table[class=body] .content {
+          padding: 0 !important;
+        }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important;
+        }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important;
+        }
+        table[class=body] .btn table {
+          width: 100% !important;
+        }
+        table[class=body] .btn a {
+          width: 100% !important;
+        }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important;
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%;
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%;
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important;
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important;
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important;
+        }
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important;
+        }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important;
+        }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important;
+        }
+        table[class=body] .content {
+          padding: 0 !important;
+        }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important;
+        }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important;
+        }
+        table[class=body] .btn table {
+          width: 100% !important;
+        }
+        table[class=body] .btn a {
+          width: 100% !important;
+        }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important;
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%;
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%;
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important;
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important;
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important;
+        }
+      }
+
+    </style>
+  </head>
+  <body class="">
+    <span class="preheader">A weekly roundup of funded startups and the jobs they're hiring for.</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <!-- insert opening title below -->
+                        <h1>
+                          Funded & Hiring
+                        </h1>
+                        <h2 style="text-align:center">
+                          <strong>Sunday, 02/28/2021</strong>
+                        </h2>
+                        <h2>
+                          A weekly roundup of funded startups and the jobs they're hiring for.
+                        </h2>
+                        <h4>
+                          Forwarded from a friend?
+                          <a href = 'https://fundedandhiring.com/'>Subscribe</a> to stay up to date on the latest startup funding and job alerts.
+                        </h4>
+                        <!-- opening title ends -->
+                      </td>
+                    </tr>
+                    <!-- insert content below -->
+
+<tr>
+      <td>
+        <h3>
+          <a href = "http://axios.link/hovR">Klarna</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/hovR">$1 Billion</a></strong></em>
+        <p>
+          Klarna, a Swedish online payment platform, is raising upwards of 1 billion in new funding at a 31 billion valuation, per Bloomberg.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/klarna">
+              Engineering/Technology(84), Product(25), Design(18), Marketing(16), Operations(15), Content Creation(12), Data(10), Customer Success(9), HR/People(6), Legal/Compliance(6), Sales/Business Development/Growth(4), Finance/Accounting(3), Supply Chain/Logistics(1), Other(74)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://www.highspot.com/">Highspot</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/XXDm">$200 Million</a></strong></em>
+        <p>
+          Highspot, a Seattle-based provider of enterprise sales enablement software, raised 200 million in Series E funding. Tiger Global led, and was joined by Bain  Co. and insiders Iconiq, Madrona Venture Group, OpenView, Salesforce Ventures, Sapphire Ventures and Shasta Ventures.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/highspot">
+              Engineering/Technology(23), Sales/Business Development/Growth(8), Marketing(7), Customer Success(7), Content Creation(6), Data(5), Product(5), Operations(5), HR/People(2), Legal/Compliance(2), Finance/Accounting(2), Design(1), Other(11)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://wallapop.com">Wallapop</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/aVBZ">$157 Million</a></strong></em>
+        <p>
+          Wallapop, a Barcelona-based P2P marketplace, raised 157 million at a 690 million valuation. Korelya Capital led, and was joined by insiders Accel, Insight Partners, 14W, GP Bullhound and Northzone.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://apply.workable.com/wallapop">
+              Engineering/Technology(10), Data(3), Product(3), Design(2), Customer Success(2), Remote(2), Marketing(1), HR/People(1), Other(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://axios.link/zJpG">BetterUp</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/zJpG">$125 Million</a></strong></em>
+        <p>
+          BetterUp, a San Francisco-based corporate coaching startup, raised 125 million in Series D funding at a 1.73 billion valuation. Iconiq Growth led, and was joined by Salesforce Ventures, Sapphire Ventures, Mubadala Capital and insiders Lightspeed Venture Partners, Threshold Ventures and Plus Capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/BetterUp">
+              Remote(41), Engineering/Technology(9), Sales/Business Development/Growth(8), Customer Success(8), Product(6), Content Creation(5), HR/People(5), Data(4), Design(3), Operations(3), Marketing(2), Other(9)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.sciencelogic.com/">ScienceLogic</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.sciencelogic.com/">$105 Million</a></strong></em>
+        <p>
+          ScienceLogic, a Reston, Va.-based IT operations management company, raised 105 million in Series E funding. Silver Lake Waterman led, and was joined by insiders Goldman Sachs, Intel Capital and NewView Capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/ScienceLogic">
+              Remote(51), Engineering/Technology(35), Customer Success(8), Operations(7), Sales/Business Development/Growth(6), Data(2), Marketing(2), HR/People(2), Design(1), Product(1), Finance/Accounting(1), Other(14)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://innovaccer.com">Innovaccer Inc</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/02/innovaccer-raises-105m-in-series-d-at-1-3-billion-valuation.html">$105 Million</a></strong></em>
+        <p>
+          Innovaccer Inc., a San Francisco, CA-based healthcare technology company, closed a $105m new round of growth funding at a $1.3 billion post-money valuation.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Innovaccer-Inc/jobs?q=&l=#cmp-skip-header-desktop">
+              Sales/Business Development/Growth(2), Product(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.truvianhealth.com">Truvian Sciences</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/02/truvian-sciences-raises-more-than-105m-in-series-c-financing.html">$105 Million</a></strong></em>
+        <p>
+          Truvian Sciences, a San Diego, CA-based closed more than $105m in a Series C financing.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Truvian-Sciences/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(6), HR/People(2), Data(1), Operations(1), Legal/Compliance(1), Finance/Accounting(1), Remote(1), Other(6)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://terminus.com/">Terminus</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/M8ip">$90 Million</a></strong></em>
+        <p>
+          Terminus, an Atlanta-based B2B marketing platform, raised 90 million in Series C funding. Great Hill Partners led, and was joined by Atlanta Ventures, Edison Partners and Hallet Capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/terminus">
+              Engineering/Technology(9), Customer Success(9), Sales/Business Development/Growth(4), Marketing(4), Data(3), Design(2), Product(2), Operations(1), HR/People(1), Other(6)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://anchorage.com">Anchorage</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/KOgu">$80 Million</a></strong></em>
+        <p>
+          Anchorage, a San Francisco-based provider of digital asset services, raised 80 million in Series C funding. GIC led, and was joined by Andreessen Horowitz, Blockchain Capital, Lux and Indico.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/Anchorage">
+              Engineering/Technology(13), Customer Success(12), Operations(6), Legal/Compliance(3), Remote(3), Product(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "/keyword/orna-therapeutics">Orna Therapeutics</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/bWPI">$80 Million</a></strong></em>
+        <p>
+          Orna Therapeutics, a Cambridge, Mass.-based developer of engineered circular RNA therapeutics, raised 80 million in Series A funding from MPM Capital, Taiho Ventures, F2 Ventures, PAGS Group, Bristol Myers Squibb, Novartis, Astellas Venture Management and Kite Pharma.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Orna-Therapeutics/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(1), Data(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "/articles/cloud-startup-aviatrix-raises-round-at-valuation-over-700-million">Aviatrix</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/gCSn">$75 Million</a></strong></em>
+        <p>
+          Aviatrix, a Santa Clara, Calif.-based cloud network platform, raised 75 million in Series D funding at a valuation north of 700 million. General Catalyst led, and was joined by Greenspring Associates, Meritech Capital, TrueBridge and insiders CRV, Formation 8, Ignition and Liberty Global Ventures
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/aviatrix">
+              Engineering/Technology(12), Design(1), Sales/Business Development/Growth(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://axios.link/UDBq">Earnix</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/UDBq">$75 Million</a></strong></em>
+        <p>
+          Earnix, an Israeli developer of predictive customer analytics software for financial institutions, raised 75 million at a 1 billion pre-money valuation. Insight Partners led, and was joined by JVP, Vintage Partners and Israel Growth Partners.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Earnix/jobs?q=&l=#cmp-skip-header-desktop">
+              Sales/Business Development/Growth(6), Engineering/Technology(1), Marketing(1), HR/People(1), Other(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://axios.link/iUOe">Ageras</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/iUOe">$73 Million</a></strong></em>
+        <p>
+          Ageras, a Copenhagen-based accounting software and marketplace startup, raised 73 million from Lugard Road Capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://apply.workable.com/ageras">
+              Sales/Business Development/Growth(1), Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://www.creatio.com/">Creatio</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/IpEE">$68 Million</a></strong></em>
+        <p>
+          Creatio, a Boston-based low-code startup, raised 68 million led by Volition Capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Creatio/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(2), Customer Success(2), Sales/Business Development/Growth(1), Other(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://burrow.com">Burrow</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/R4Bo">$55 Million</a></strong></em>
+        <p>
+          Burrow, a modular furniture startup, raised 55 million in Series C funding. Parkway VC led, and was joined by NEA, Red  Blue Ventures, Winklevoss Capital and Michael Seibel.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Burrow/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(2), Design(1), Finance/Accounting(1), Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://splice.com/">Splice</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/Pa4Q">$55 Million</a></strong></em>
+        <p>
+          Splice, a New York-based music creation platform, raised 55 million led by a joint venture by Liontree and music exec Matt Pincus. Existing backers include Flybridge Capital Partners, DFJ Growth, True Ventures and USV.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/Splice">
+              Remote(8), Engineering/Technology(6), Product(2), Data(1), Marketing(1), Customer Success(1), Other(4)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://www.madison-reed.com/">Madison Reed</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/Ob5j">$52 Million</a></strong></em>
+        <p>
+          Madison Reed, a San Francisco-based provider of at-home hair coloring products, raised 52 million in Series F funding. Existing backer True Ventures led, and was joined by Goldman Sachs, Motley Fool Ventures, Portfolia and insiders Norwest Venture Partners, Comcast Ventures and Shea Ventures.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Madison-Reed/jobs?q=&l=#cmp-skip-header-desktop">
+              Remote(12), Operations(7), Engineering/Technology(4), Product(3), Data(2), Design(1), Sales/Business Development/Growth(1), Customer Success(1), Finance/Accounting(1), Other(71)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.sorare.com/">Sorare</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.sorare.com/">$50 Million</a></strong></em>
+        <p>
+          Sorare, a developer of blockchain-based digital soccer cards, raised 50 million in Series A funding. Benchmark led, and was joined by Accel, Alexis Ohanian, Gary Vaynerchuk and Antoine Griezmann.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://apply.workable.com/sorare">
+              Engineering/Technology(1), Design(1), HR/People(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.vidmob.com">VidMob</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/02/vidmob-raises-50m-in-series-c-funding.html">$50 Million</a></strong></em>
+        <p>
+          VidMob, a NYC-based Intelligent Creative platform provider, closed its Series C financing, raising $50m in expansion capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/VidMob">
+              Engineering/Technology(12), Operations(10), Customer Success(9), Sales/Business Development/Growth(6), Marketing(4), Remote(4), Data(2), Design(2), Product(1), Content Creation(1), HR/People(1), Other(3)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.lob.com/">Lob</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.lob.com/">$50 Million</a></strong></em>
+        <p>
+          Lob, a San Francisco-based direct mail platform, raised 50 million in Series C funding led by YC Continuity.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Lob/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(9), Sales/Business Development/Growth(4), Product(3), Marketing(3), HR/People(3), Customer Success(2), Data(1), Design(1), Operations(1), Content Creation(1), Finance/Accounting(1), Other(6)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.maltainc.com/">Malta</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.maltainc.com/">$50 Million</a></strong></em>
+        <p>
+          Malta, a Cambridge, Mass.-based developer of long-duration energy storage solutions, raised 50 million in Series B funding. Proman led, and was joined by Dustin Moskovitz and insiders Alfa Laval and Breakthrough Energy Ventures.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Malta/jobs?q=&l=#cmp-skip-header-desktop">
+              Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://www.redoxengine.com/">Redox</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/LmF9">$45 Million</a></strong></em>
+        <p>
+          Redox, a Madison, Wis.-based integration platform for digital healthcare applications, raised 45 million in Series D funding. Adams Street Partners led, and was joined by Avenir and insiders Battery Ventures, .406 Ventures, and RRE Ventures.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://apply.workable.com/redox">
+              Sales/Business Development/Growth(4), Engineering/Technology(2), Customer Success(1), Other(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.blueshift.com/">Blueshift</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.blueshift.com/">$30 Million</a></strong></em>
+        <p>
+          Blueshift, a San Francisco-based customer data platform, raised 30 million in Series C funding. Fort Ross Ventures led, and was joined by Avatar Growth Capital and insiders Softbank Ventures Asia, Storm Ventures, Conductive Ventures and Nexus Venture Partners.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Blueshift/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(2), Sales/Business Development/Growth(1), Customer Success(1), Finance/Accounting(1), Other(3)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.armorblox.com/">Armorblox</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.armorblox.com/">$30 Million</a></strong></em>
+        <p>
+          Armorblox, a Sunnyvale-based provider of enterprise email security solutions, raised 30 million in Series B funding. Next47 led, and was joined by Polaris Partners, Unusual Ventures and General Catalyst.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/armorblox">
+              Remote(14), Engineering/Technology(11), Sales/Business Development/Growth(7), Data(3), Product(2), Operations(2), Customer Success(2), Design(1), HR/People(1), Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.medisafe.com/">Medisafe</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.medisafe.com/">$30 Million</a></strong></em>
+        <p>
+          Medisafe, a Boston-based medical management company, raised 30 million in Series C funding. Sanofi Ventures and Alive Israel HealthTech Fund co-led, and were joined by Leumi Partners, Menora Mivtachim, Consensus Business Group and insiders Pitango Ventures, 7Wire Ventures, Merck Ventures, Octopus Ventures, Lool HealthTech, Triventures and Ourcrowd.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Medisafe/jobs?q=&l=#cmp-skip-header-desktop">
+              Design(1), Sales/Business Development/Growth(1), Marketing(1), Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.katanagraph.com/">Katana Graph</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.katanagraph.com/">$28.5 Million</a></strong></em>
+        <p>
+          Katana Graph, an Austin, Texas-based graph processing company, raised 28.5 million in Series A funding. Intel Capital led, and was joined by WRVI Capital, Nepenthe Capital, Dell Technologies Capital, and Redline Capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/KatanaGraph">
+              Engineering/Technology(4), Product(2), Data(1), Remote(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://borrowell.com">Borrowell</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/qLYt">$25 Million</a></strong></em>
+        <p>
+          Borrowell, a Canadian fintech and credit education startup, raised C25 million from Kensington Capital Partners, BDC Capital, iA Financial Group, Impact Engine and insiders Portag3 Ventures, White Star Capital, National Bank of Canada and Equitable Bank. It also acquired Refresh Financial, an affordable credit provider to underserved Canadians.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://apply.workable.com/borrowell">
+              Remote(7), Engineering/Technology(4), Data(1), Design(1), Other(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.earnup.com/">EarnUp</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.earnup.com/">$25 Million</a></strong></em>
+        <p>
+          EarnUp, a San Francisco-based platform for financially challenged homeowners, raised 25 million in Series B funding. Bain Capital Ventures led, and was joined by SignalFire, Blumberg Capital and Flourish Ventures.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/EarnUp/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(3), Finance/Accounting(3), Operations(2), Data(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.gettacar.com">Gettacar</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/02/gettacar-raises-25m-in-funding.html">$25 Million</a></strong></em>
+        <p>
+          Gettacar, a Philadelphia, PA-based online car buying startup, raised $25m in funding, bringing the total raised to $48m.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Gettacar/jobs?q=&l=#cmp-skip-header-desktop">
+              Sales/Business Development/Growth(2), Customer Success(2), HR/People(2), Design(1), Operations(1), Other(5)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.parkside.app/">Parkside</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.parkside.app/">$24 Million</a></strong></em>
+        <p>
+          Parkside, a San Francisco-based stock trading and clearing platform for brokerages and digital banks, raised 24 million in Series A funding from Mubadala Capital, Peak6, FinTech Collective and Enlight Growth Partners.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Parkside/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(8), Operations(2), Data(1), Design(1), Product(1), Customer Success(1), HR/People(1), Other(11)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://axios.link/qGbZ">Dispo</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/qGbZ">$20 Million</a></strong></em>
+        <p>
+          Dispo, a retro photo-sharing app co-founded by YouTube star David Dobrik, raised 20 million in Series A funding led by Spark Capital at a valuation of about 200 million, per Axios.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/dispo">
+              Engineering/Technology(2), Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.heydaytskincare.com/">Heyday</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.heydaytskincare.com/">$20 Million</a></strong></em>
+        <p>
+          Heyday, a New York-based skincare brand, raised 20 million in Series B funding. Level 5 Capital Partners led, and was joined by insiders Lerer Hippeau and Fifth Wall Ventures.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/Heyday">
+              Finance/Accounting(1), Other(10)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://www.wisetack.com/">Wisetack</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/96rm">$19 Million</a></strong></em>
+        <p>
+          Wisetack, a San Francisco-based provider of buy-now-pay-later services for business transactions, raised 19 million. Greylock led, and was joined by Bain Capital Ventures.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://apply.workable.com/wisetack">
+              Remote(3), Engineering/Technology(2), Data(1), Sales/Business Development/Growth(1), Operations(1), Marketing(1), Other(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://maze.co">Maze</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/Y9we">$15 Million</a></strong></em>
+        <p>
+          Maze, a user testing platform, raised 15 million in Series A funding. Emergence Capital led, and was joined by Amplify Partners, Partech and Seedcamp.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://boards.greenhouse.io/Maze">
+              Remote(14), Engineering/Technology(6), Sales/Business Development/Growth(4), Marketing(3), Customer Success(3), Product(2), Data(1), Content Creation(1), HR/People(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://nextgenfoods.sg/">Next Gen</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/uH7H">$10 Million</a></strong></em>
+        <p>
+          Next Gen, a Singapore-based maker of plant-based poultry, raised 10 million in seed funding from Temasek, K3 Ventures, EDB New Ventures, NX-Food, FEBE Ventures and Blue Horizon.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://careers.smartrecruiters.com/NextGen">
+              Other(8)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://datajoy.com/">DataJoy</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/qqXj">$6 Million</a></strong></em>
+        <p>
+          DataJoy, a startup that helps SaaS companies track biz metrics, raised 6 million in seed funding. Foundation Capital led, and was joined by Quarry VC, Partech Partners, IGSB, Bow Capital and SVB.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/datajoy">
+              Remote(4), Engineering/Technology(1), Design(1), Product(1), Customer Success(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://www.treecard.org/">TreeCard</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/LWJP">$5.1 Million</a></strong></em>
+        <p>
+          TreeCard, a British credit card startup, raised 5.1 million in seed funding. EQT Ventures led, and was joined by Seedcamp and Episode 1.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://apply.workable.com/treecard">
+              Engineering/Technology(1), Content Creation(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://bankblvd.com/">First Boulevard</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/02/first-boulevard-raises-5m-in-seed-funding.html">$5 Million</a></strong></em>
+        <p>
+          First Boulevard, a digitally native neobank focused on improving the financial livelihood of Black communities across the U.S., raised $5m in seed funding.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/First-Boulevard/jobs?q=&l=#cmp-skip-header-desktop">
+              Remote(9), Engineering/Technology(2), Design(2), Product(2), Operations(2), HR/People(1), Finance/Accounting(1), Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://www.finsmes.com/2021/02/laundryheap-raises-3-5m-in-series-a-funding.html">Laundryheap</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/nDzF">$3.5 Million</a></strong></em>
+        <p>
+          Laundryheap, a British on-demand laundry and dry cleaning startup, 3.5 million in Series A funding led by Sova VC.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Laundryheap/jobs?q=&l=#cmp-skip-header-desktop">
+              Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.aquariumlearning.com/">Aquarium</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/Ui12">$2.6 Million</a></strong></em>
+        <p>
+          Aquarium, a machine learning data management startup, raised 2.6 million in seed funding led by Sequoia Capital.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://jobs.lever.co/aquarium">
+              Engineering/Technology(2)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "https://thelanding.app/">The Landing</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/02/the-landing-raises-2-5m-in-seed-funding.html">$2.5 Million</a></strong></em>
+        <p>
+          The Landing, a San Francisco, CA-based home furnishing platform, raised $2.5m in seed funding.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/The-Landing/jobs?q=&l=#cmp-skip-header-desktop">
+              Other(1)
+            </a>
+        </p>
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h3>
+          <a href = "http://www.naturalfiberwelding.com/">Natural Fiber Welding</a>
+        </h3>
+        <strong>Funding Amount</strong>: <em><strong><a href = "http://www.naturalfiberwelding.com/">$2 Million</a></strong></em>
+        <p>
+          Natural Fiber Welding, a Peoria, Ill.-based textile fibers company, raised 2 million from shoemaker Allbirds.
+        </p>
+        <p>
+          <strong>Hiring For:</strong>
+            <a href = "https://www.indeed.com/cmp/Natural-Fiber-Welding/jobs?q=&l=#cmp-skip-header-desktop">
+              Engineering/Technology(7), Product(5), Data(3), Sales/Business Development/Growth(1), Operations(1), Marketing(1), Other(3)
+            </a>
+        </p>
+      </td>
+    </tr>
+                    <!-- content ends here -->
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <br> Want to contact the author? Reply directly to this email or reach out on <a href="https://www.linkedin.com/in/thestevenwang/">LinkedIn</a>.
+                    <br> <a href="*|ARCHIVE|*">View this email in your browser</a>
+                    <br> Don't like these emails? <a href="*|UNSUB|*">Unsubscribe</a>.
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>

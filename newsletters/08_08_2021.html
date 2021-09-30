@@ -1,0 +1,1290 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Funded & Hiring</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      
+      /*All the styling goes here*/
+      
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+        width: 40%;
+        margin: auto;
+        display: block;
+        margin-top: 10px
+      }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+      }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; 
+      }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 685px;
+        padding: 10px;
+        width: 685px; 
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 685px;
+        padding: 10px; 
+      }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%; 
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; 
+      }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%; 
+      }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; 
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 10px; 
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 550;
+        text-align: center;
+        text-transform: none; 
+        margin-bottom: 10px;
+        font-family: "Times New Roman"
+      }
+      
+      h2 {
+        text-align:center;
+      }
+
+      h3 {
+        /*color: #7F00FF;*/
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin: 5px 0 0 0;,
+      }
+      ,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; 
+      }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; 
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline; 
+      }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; 
+      }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; 
+      }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; 
+      }
+
+      .btn-primary table td {
+        background-color: #3498db; 
+      }
+
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; 
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; 
+      }
+
+      .first {
+        margin-top: 0; 
+      }
+
+      .align-center {
+        text-align: center; 
+      }
+
+      .align-right {
+        text-align: right; 
+      }
+
+      .align-left {
+        text-align: left; 
+      }
+
+      .clear {
+        clear: both; 
+      }
+
+      .mt0 {
+        margin-top: 0; 
+      }
+
+      .mb0 {
+        margin-bottom: 0; 
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; 
+      }
+
+      .powered-by a {
+        text-decoration: none; 
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; 
+        }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; 
+        }
+        table[class=body] .content {
+          padding: 0 !important; 
+        }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table[class=body] .btn table {
+          width: 100% !important; 
+        }
+        table[class=body] .btn a {
+          width: 100% !important; 
+        }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; 
+        }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; 
+        }
+        table[class=body] .content {
+          padding: 0 !important; 
+        }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table[class=body] .btn table {
+          width: 100% !important; 
+        }
+        table[class=body] .btn a {
+          width: 100% !important; 
+        }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+    </style>
+  </head>
+  <body class="">
+    <span class="preheader">A weekly roundup of funded startups and the jobs they're hiring for.</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <!-- insert opening title below -->
+                        <h1>
+                          Funded & Hiring
+                        </h1>
+                        <h2 style="text-align:center">
+                          <strong>Sunday, 08/08/2021</strong>
+                        </h2>
+                        <h2>
+                          A weekly roundup of funded startups and the jobs they're hiring for.
+                        </h2>
+                        <h4>
+                          Forwarded from a friend? 
+                          <a href = 'https://fundedandhiring.com/'>Subscribe</a> to stay up to date on the latest startup funding and job alerts.
+                        </h4>
+                        <!-- opening title ends -->
+                      </td>
+                    </tr>
+                    <!-- insert content below -->
+                    
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.cnbc.com/2020/03/09/coronavirus-startups-hopin-and-run-the-world-bring-conferences-online.html">Hopin</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/qc6j">$450 Million</a></strong></em>
+                            <p>
+                              Hopin, a U.K.-based virtual event software company, raised 450 million in Series D funding led by Arena Holdings and Altimeter Capital, with Adams Street Partners, Untitled Investments, XN, Andreessen Horowitz, DFJ Growth, General Catalyst, GIC, IVP, Northzone, Salesforce Ventures, Slack Fund, Temasek and Tiger Global also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/Hopin">
+                                  Remote(119), Engineering/Technology(39), Customer Success(26), Product(21), Sales/Business Development/Growth(14), Marketing(10), Data(7), Design(5), Operations(5), HR/People(4), Legal/Compliance(3), Finance/Accounting(1), Other(12)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/SVIq">Unacademy</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/SVIq">$440 Million</a></strong></em>
+                            <p>
+                              Unacademy, an Indian online learning platform, raised 440 million in Series H funding at a 3.44 billion valuation led by Temasek, with Mirae Asset, SoftBank Vision Fund 2, General Atlantic, Tiger Global, Deepinder Goyal, Ritesh Agarwal, and others also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://careers.smartrecruiters.com/Unacademy">
+                                  Engineering/Technology(1), Sales/Business Development/Growth(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.dataiku.com/">Dataiku</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.dataiku.com/">$400 Million</a></strong></em>
+                            <p>
+                              Dataiku, a New York-based data management startup, raised 400 million in Series E funding at a 4.6 billion valuation led by Tiger Global, with ICONIQ Growth, CapitalG, FirstMark Capital, Battery Ventures, Snowflake Ventures, Dawn Capital, Insight Partners, Eurazeo, Lightrock and Olivier Pomel also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/dataiku">
+                                  Engineering/Technology(71), Sales/Business Development/Growth(51), Customer Success(43), Remote(34), Data(22), Operations(14), HR/People(14), Finance/Accounting(11), Design(5), Content Creation(3), Product(2), Marketing(2), Other(27)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.rapyd.net/">Rapyd</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/t4FW">$300 Million</a></strong></em>
+                            <p>
+                              Rapyd, a U.K.-based fintech API company, raised 300 million in Series E funding at a post-money valuation of 8.75 billion led by Target Global, with Fidelity Ventures, Altimeter Capital, Whale Rock Capital, BlackRock, Dragoneer, and others also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Rapyd/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Sales/Business Development/Growth(7), Marketing(5), Product(3), Legal/Compliance(2), Engineering/Technology(1), HR/People(1), Remote(1), Other(5)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/LhNg">InterVenn</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/LhNg">$201 Million</a></strong></em>
+                            <p>
+                              InterVenn Biosciences, a San Francisco-based biotech company, raised 201 million in Series C led by SoftBank Group, Heritage Provider Network, Irving Investors and Highside Capital Management, with Amplify Partners, Anzu Partners and others also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/InterVenn/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(5), Product(3), Data(2), Operations(2), HR/People(2), Sales/Business Development/Growth(1), Supply Chain/Logistics(1), Other(5)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://techcrunch.com/2021/02/11/401k-provider-human-interest-doubles-valuation-with-55m-fundraise/">Human Interest</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/3GQo">$200 Million</a></strong></em>
+                            <p>
+                              Human Interest, a San Francisco-based provider of SMB 401ks, has raised a 200 million round led by The Rise Fund and SoftBank Vision Fund 2, with Crosslink Capital, NewView Capital, Glynn Capital, U.S. Venture Partners, Wing Venture Capital, Uncork Capital, Slow Capital, Susa Ventures and others also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/HumanInterest">
+                                  Remote(46), Engineering/Technology(16), Customer Success(8), Operations(7), Data(5), Product(5), Sales/Business Development/Growth(5), Finance/Accounting(4), HR/People(3), Legal/Compliance(3), Design(2), Marketing(2), Content Creation(1), Other(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/lK2Y">GoGuardian</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/lK2Y">$200 Million</a></strong></em>
+                            <p>
+                              GoGuardian, a Los Angeles-based company that sells software to K-12 schools, raised 200 million in funding from Tiger Global.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/goguardian">
+                                  Remote(14), Engineering/Technology(13), Data(5), Product(5), Sales/Business Development/Growth(3), Operations(3), Design(2), Marketing(2), Customer Success(1), Content Creation(1), HR/People(1), Finance/Accounting(1), Other(8)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.nuscalepower.com/">NuScale Power</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/nuscale-power-raises-192m-in-strategic-funding.html">$192 Million</a></strong></em>
+                            <p>
+                              NuScale Power, a Portland, Oregon-based nuclear technology company, raised $192m in strategic funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/NuScale-Power/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(13), Remote(6), Other(9)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.sumabrands.com/">Suma Brands</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/JxJy">$150 Million</a></strong></em>
+                            <p>
+                              Suma Brands, a Minneapolis-based e-commerce merchant consolidator, raised 150 million in funding led by Pace Capital and Material, with a credit facility led by i80 Group.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/SumaBrands">
+                                  Supply Chain/Logistics(7), Sales/Business Development/Growth(4), Marketing(4), Finance/Accounting(4), Engineering/Technology(3), Data(3), Remote(3), Content Creation(1), Other(9)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.addtoany.com/share#url=https%3A%2F%2Fwww.fiercebiotech.com%2Fbiotech%2Fpepgen-raises-113m-to-challenge-sarepta-dmd-build-neuromuscular-and-neurologic-pipeline&title=PepGen%20raises%20%24113M%20to%20challenge%20Sarepta%20in%20DMD%2C%20build%20neuromuscular%20and%20neurologic%20pipeline">PepGen</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/ePop">$112.5 Million</a></strong></em>
+                            <p>
+                              PepGen, a Boston-based maker of therapies for neurologic diseases, raised 112.5 million from RA Capital Management, Oxford Sciences Innovation, CureDuchenne Ventures, Viking Global Investors, Deerfield Management Company, Adage Capital Management, Samsara Biocapital, and Laurion Capital Management.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/PepGen/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(1), Data(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.centerviewcapital.com/technology">FullStory</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.centerviewcapital.com/technology">$103 Million</a></strong></em>
+                            <p>
+                              FullStory, an Atlanta-based analytics company, raised 103 million in Series D funding at a 1.8 billion valuation led by Permira, with Kleiner Perkins, GV, Stripes, Dell Technologies Capital, Salesforce Ventures, and Glynn Capital also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/FullStory">
+                                  Remote(28), Engineering/Technology(11), Customer Success(9), Marketing(7), Sales/Business Development/Growth(6), Operations(3), Design(2), Product(2), Content Creation(1), HR/People(1), Other(4)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/6R0x">Nozomi Networks</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/6R0x">$100 Million</a></strong></em>
+                            <p>
+                              Nozomi Networks, a San Francisco-based cyber security startup, raised 100 million from Honeywell Ventures and In-Q-Tel.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Nozomi-Networks/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Remote(15), Engineering/Technology(8), Sales/Business Development/Growth(4), Product(3), Marketing(3), Finance/Accounting(2), Other(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.mindtickle.com/">Mindtickle</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/aFTi">$100 Million</a></strong></em>
+                            <p>
+                              Mindtickle, an Indian sales software company, raised 100 million in Series E funding led by SoftBank, with Norwest Venture Partners, Canaan, NewView Capital, and Qualcomm Ventures also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/mindtickle">
+                                  Engineering/Technology(21), Product(12), Customer Success(12), Marketing(7), HR/People(7), Sales/Business Development/Growth(5), Data(4), Design(4), Operations(4), Remote(3), Content Creation(2), Finance/Accounting(1), Other(12)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.crickethealth.com">Cricket Health</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/cricket-health-raises-83-5m-in-series-b-funding.html">$83.5 Million</a></strong></em>
+                            <p>
+                              Cricket Health, a San Francisco, CA- and Cambridge, MA-based provider of value-based kidney care, closed an $83.5m Series B funding round.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/crickethealth">
+                                  Remote(18), Engineering/Technology(5), Product(4), Data(2), Design(2), Sales/Business Development/Growth(2), Operations(2), Legal/Compliance(2), Marketing(1), HR/People(1), Finance/Accounting(1), Other(5)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://yellow.ai/about-us">Yellow</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/SkNU">$78.15 Million</a></strong></em>
+                            <p>
+                              Yellow.ai, a San Francisco-based customer service software startup, raised 78.15 million in Series C funding led by WestBridge Capital, with Sapphire Ventures, and Salesforce Ventures. Lightspeed Venture Partners also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Yellow/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Customer Success(10), Other(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://modernanimal.com">Modern Animal</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/modern-animal-raises-75-5m-in-funding.html">$75.5 Million</a></strong></em>
+                            <p>
+                              Modern Animal, a Los Angeles, CA-based veterinary company, raised $75.5m in funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/modernanimal">
+                                  Engineering/Technology(4), Operations(4), HR/People(2), Finance/Accounting(2), Remote(2), Data(1), Other(16)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://superhuman.com/">Superhuman</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/superhuman-raises-75m-in-series-c-funding.html">$75 Million</a></strong></em>
+                            <p>
+                              Superhuman, a San Francisco, CA-based subscription email service, raised $75m in Series C funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Superhuman/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Sales/Business Development/Growth(2), Engineering/Technology(1), Design(1), Operations(1), Customer Success(1), HR/People(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "mailto:corrections@forbes.com?subject=Report Correction: Rebecca Szkutak&body=Reporting Correction for: %0A %0A Title: Knowde Raises $72 Million On Its Journey To Bring The Chemicals Market Online %0A Author: Rebecca Szkutak %0A URL: https://www.forbes.com/sites/rebeccaszkutak/2021/08/05/knowde-raises-72-million-on-its-journey-to-bring-the-chemicals-market-online/%0A %0A - %0A %0A Your Name: %0A Correction Request: %0A %0A - %0A %0A Thank you for reporting a correction. Forbes Staff will review your concern shortly.">Knowde</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/10q6">$72 Million</a></strong></em>
+                            <p>
+                              Knowde, a San Jose, Calif.-based marketplace for ingredients, polymers, and chemistry, raised 72 million in Series B funding led by Coatue, with Mantis, Sound Ventures, Sequoia Capital, and others also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/Knowde">
+                                  Remote(20), Engineering/Technology(12), Product(6), Customer Success(2), HR/People(2), Design(1), Sales/Business Development/Growth(1), Operations(1), Marketing(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.sentilink.com/">SentiLink</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/BuJs">$70 Million</a></strong></em>
+                            <p>
+                              SentiLink, a San Francisco-based identity fraud detection startup, raised 70 million in Series B funding led by Craft Ventures, with Felicis Ventures, Andreessen Horowitz, and NYCA also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/sentilink">
+                                  Engineering/Technology(5), Remote(4), Data(2), Customer Success(2), Product(1), Operations(1), Finance/Accounting(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.reversinglabs.com/">ReversingLabs</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/xSbt">$56 Million</a></strong></em>
+                            <p>
+                              ReversingLabs, a Cambridge, Mass.-based cybersecurity company, raised 56 million in Series B funding led by Crosspoint Capital Partners, with ForgePoint Capital and Prelude also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://careers.smartrecruiters.com/ReversingLabs">
+                                  Engineering/Technology(9), Remote(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://miyokos.com/">Miyokos Creamery</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/miyokos-creamery-closes-52m-series-c-funding.html">$52 Million</a></strong></em>
+                            <p>
+                              Miyoko’s Creamery, a Petaluma, Calif.-based creator of vegan cheese and butter, raised $52M in Series C funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Miyokos-Creamery/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Finance/Accounting(6), Supply Chain/Logistics(6), Engineering/Technology(2), Data(2), Sales/Business Development/Growth(2), Design(1), Other(16)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.daytwo.com/">Third Wave Automation</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.daytwo.com/">$40 Million</a></strong></em>
+                            <p>
+                              Third Wave Automation, a Union City, Calif.-based industrial automation startup, raised 40 million in Series B funding led by Norwest Venture Partners, with Innovation Endeavors, Eclipse, and Toyota Ventures also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Third-Wave-Automation/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(7), Data(1), Design(1), HR/People(1), Other(6)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.daytwo.com/">DayTwo</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.daytwo.com/">$37 Million</a></strong></em>
+                            <p>
+                              DayTwo, a Walnut Creek, Calif.-based nutrition company, raised 37 million led by Cathay Innovation and aMoon.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/daytwo">
+                                  Customer Success(19), Engineering/Technology(6), Operations(5), Remote(3), Sales/Business Development/Growth(2), Marketing(2), Product(1), Other(11)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.novakidschool.com/">NovaKid</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/8JHt">$35 Million</a></strong></em>
+                            <p>
+                              NovaKid, a Poland- and San Francisco-based kids English learning startup, raised 35 million in Series B funding led by Owl Ventures and Goodwater Capital, with PortfoLion, LearnStart, TMT Investments, Xploration Capital, LETA Capital and BonAngels also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/NovaKid/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Remote(6), Sales/Business Development/Growth(4), Content Creation(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.workjam.com/">WorkJam</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.workjam.com/">$35 Million</a></strong></em>
+                            <p>
+                              WorkJam, a Montreal-based maker of software for frontline workers, raised 35 million in new funding from Silver Lake Waterman.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/WorkJam/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Sales/Business Development/Growth(3), Remote(3), Engineering/Technology(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.reservetrust.com">Reserve Trust</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/lPLp">$30.5 Million</a></strong></em>
+                            <p>
+                              Reserve Trust, a Denver-based business payments company, raised 30.5 million in Series A funding led by QED Investors, with FinTech Collective and Ardent Venture Partners also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/reservetrust">
+                                  Remote(5), Operations(3), Engineering/Technology(2), Data(1), Customer Success(1), HR/People(1), Legal/Compliance(1), Finance/Accounting(1), Supply Chain/Logistics(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/lfgo">Finite State</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/lfgo">$30 Million</a></strong></em>
+                            <p>
+                              Finite State, a Columbus-based supply chain security startup, raised 30 million in Series B funding led by Energize Ventures, Schneider Electric Ventures, and Merlin Ventures.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/finitestate">
+                                  Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.inviarobotics.com/">inVia Robotics</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/invia-robotics-raises-30m-in-series-c-funding.html">$30 Million</a></strong></em>
+                            <p>
+                              inVia Robotics, a Westlake Village CA-based provider of next-generation warehouse automation solutions, raised $30M in Series C funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/inVia-Robotics/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(10), Sales/Business Development/Growth(6), Operations(3), Remote(3), Product(2), Marketing(2), Content Creation(1), Other(4)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/abfb">Exoticca</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/abfb">$30 Million</a></strong></em>
+                            <p>
+                              Exoticca, a Spanish tour operator, raised 30 million in Series C funding led by 14W and Mangrove Capital Partners, with Aldea Ventures, Milano Investment Partners SGR and others also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://apply.workable.com/exoticca">
+                                  Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.makersights.com/">MakerSights</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.makersights.com/">$25 Million</a></strong></em>
+                            <p>
+                              MakerSights, a San Francisco-based retail analytics software startup, raised 25 million in Series B funding led by G2VP, with Golub Capital, Gaingels, Forerunner Ventures, Baseline Ventures, Brett Hurt, Brant Barton, Jared Schrieber, Jon Brelig, and Elizabeth Spaulding also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://careers.smartrecruiters.com/MakerSights">
+                                  Engineering/Technology(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.localize.city/">Localize</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/localize-raises-25m-in-series-c-financing.html">$25 Million</a></strong></em>
+                            <p>
+                              Localize, a NYC-based developer of AI-powered real estate technologies, raised $25m in Series C financing.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Localize/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Remote(4), Operations(2), Marketing(2), Engineering/Technology(1), Design(1), Product(1), Sales/Business Development/Growth(1), Customer Success(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.sironamedical.com/">Sirona Medical</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.sironamedical.com/">$22.5 Million</a></strong></em>
+                            <p>
+                              Sirona Medical, a San Francisco-based radiology IT provider, raised 22.5 million in Series A funding led by 8VC.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/sironamedical">
+                                  Engineering/Technology(5), Design(1), Marketing(1), Content Creation(1), HR/People(1), Remote(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://messari.io">Messari</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/messari-raises-21m-in-series-a-funding.html">$21 Million</a></strong></em>
+                            <p>
+                              Messari, a NYC-based crypto market intelligence company, closed a $21m Series A funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/messari">
+                                  Remote(14), Engineering/Technology(7), Sales/Business Development/Growth(2), Design(1), Operations(1), Marketing(1), Other(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://realtimemed.com/">Real Time Medical Systems</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/real-time-medical-systems-raises-20m-in-series-c-funding.html">$20 Million</a></strong></em>
+                            <p>
+                              Real Time Medical Systems, a Baltimore-based provider of a healthcare interventional analytics solution, closed a $20m Series C funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Real-Time-Medical-Systems/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(3), Remote(3), Customer Success(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://sequre-dx.com/">SeQure Dx</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/sequre-dx-raises-17-5m-in-series-a-funding.html">$17.5 Million</a></strong></em>
+                            <p>
+                              SeQure Dx, a Waltham, Mass.-based gene-editing diagnostics company, raised $17.5m in Series A funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/SeQure-Dx/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(2), Data(1), Operations(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://wildfire-corp.com/">Wildfire Systems</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://wildfire-corp.com/">$15 Million</a></strong></em>
+                            <p>
+                              Wildfire Systems, a Solana Beach, Calif.-based fintech, has secured 15 million in Series A funding led by TTV Capital and QED Investors, with B Capital, the George Kaiser Family Foundation and Daher Capital, Mucker Capital, Bonfire Ventures, Moonshots Capital and BAM Ventures also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Wildfire-Systems/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(1), Remote(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://techcrunch.com/tag/aira/">Aira</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/jNwX">$12 Million</a></strong></em>
+                            <p>
+                              Aira, a Chandler, Ariz.-based wireless charging company, has raised 12 million in a seed round led by private investors, including Jawad Ashan, Lori Greiner and Robert Herjavec.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://apply.workable.com/aira">
+                                  Engineering/Technology(1), Remote(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.getrey.com">Rey</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/rey-raises-10m-in-series-a-funding.html">$10 Million</a></strong></em>
+                            <p>
+                              Rey, an Austin TX-based mental health and wellness company, raised $10M in Series A funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/Rey">
+                                  Remote(10), Engineering/Technology(3), Operations(2), Product(1), Content Creation(1), Other(3)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://AnimalBiome.com">AnimalBiome</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/animalbiome-raises-8-6m-in-series-a-funding.html">$8.6 Million</a></strong></em>
+                            <p>
+                              AnimalBiome, an Oakland, Calif.-based, science-powered animal health company, raised $8.6m in Series A funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/AnimalBiome/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Finance/Accounting(1), Remote(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.getcorrelated.com/">Correlated</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/zQOY">$8.3 Million</a></strong></em>
+                            <p>
+                              Correlated, a New York-based user data analytics company, raised 8.3 million in seed funding led by NextView Ventures and Harrison Metal.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/correlated">
+                                  Sales/Business Development/Growth(2), Engineering/Technology(1), Customer Success(1), Remote(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.ubees.com">Ubees</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/ubees-raises-8m-in-funding.html">$8 Million</a></strong></em>
+                            <p>
+                              Ubees, a NYC-based precision beekeeping and pollination services provider, secured $8m in growth funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Ubees/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Sales/Business Development/Growth(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.datagumbo.com/">Data Gumbo</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.datagumbo.com/">$7.7 Million</a></strong></em>
+                            <p>
+                              Data Gumbo, a Houston-based maker of a blockchain-powered and secured industrial smart contract network, has closed its 7.7 million Series B, led by Equinor Ventures, with participation from Saudi Aramco Energy Ventures and L37.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Data-Gumbo/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Engineering/Technology(4), Sales/Business Development/Growth(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://nektar.ai/">Nektar</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://nektar.ai/">$6 Million</a></strong></em>
+                            <p>
+                              Nektar.ai, a Singapore-based B2B sales software maker, raised 6 million in seed funding led by B Capital Group, with 3One4 Capital and Nexus Venture Partners also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Nektar/jobs?q=&l=#cmp-skip-header-desktop">
+                                  Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.juno.care/">Juno Medical</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.juno.care/">$5.4 Million</a></strong></em>
+                            <p>
+                              Juno Medical, a New York-based membership-based primary health care startup, raised 5.4 million in seed funding led by Vast Ventures, with Atento Capital, Company Ventures, humbition, RareBreed Ventures, and Lafayette Square also participating.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/junomedical">
+                                  Operations(1), Marketing(1), Remote(1), Other(11)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.motorefi.com/">MotoRefi</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.motorefi.com/">$5 Million</a></strong></em>
+                            <p>
+                              MotoRefi, an Arlington, Va.-based auto loan refinancing startup, raised 5 million in funding from Curql Fund.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/MotoRefi">
+                                  Engineering/Technology(46), Product(31), Remote(13), Marketing(10), Data(9), Design(8), Customer Success(8), Operations(7), Sales/Business Development/Growth(6), Finance/Accounting(1), Other(9)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.codelicious.com/">Codelicious</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/08/codelicious-raises-3-8m-in-seed-funding.html">$3.8 Million</a></strong></em>
+                            <p>
+                              Codelicious, a Boston, MA-based computer science curriculum platform, raised $3.8m in seed funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://apply.workable.com/codelicious">
+                                  Engineering/Technology(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    
+                    <!-- content ends here -->
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <br> Want to contact the author? Reply directly to this email or reach out on <a href="https://www.linkedin.com/in/thestevenwang/">LinkedIn</a>.
+                    <br> <a href="*|ARCHIVE|*">View this email in your browser</a>
+                    <br> Don't like these emails? <a href="*|UNSUB|*">Unsubscribe</a>.
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
+

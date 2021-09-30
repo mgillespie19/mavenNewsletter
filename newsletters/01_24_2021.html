@@ -1,0 +1,1046 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Funded & Hiring</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      
+      /*All the styling goes here*/
+      
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+      }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+      }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; 
+      }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 685px;
+        padding: 10px;
+        width: 685px; 
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 685px;
+        padding: 10px; 
+      }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%; 
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; 
+      }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%; 
+      }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; 
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 10px; 
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 550;
+        text-align: center;
+        text-transform: none; 
+        margin-bottom: 10px;
+        font-family: "Times New Roman"
+      }
+      
+      h2 {
+        text-align:center;
+      }
+
+      h3 {
+        /*color: #7F00FF;*/
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin: 5px 0 0 0;,
+      }
+      ,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; 
+      }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; 
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline; 
+      }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; 
+      }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; 
+      }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; 
+      }
+
+      .btn-primary table td {
+        background-color: #3498db; 
+      }
+
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; 
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; 
+      }
+
+      .first {
+        margin-top: 0; 
+      }
+
+      .align-center {
+        text-align: center; 
+      }
+
+      .align-right {
+        text-align: right; 
+      }
+
+      .align-left {
+        text-align: left; 
+      }
+
+      .clear {
+        clear: both; 
+      }
+
+      .mt0 {
+        margin-top: 0; 
+      }
+
+      .mb0 {
+        margin-bottom: 0; 
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; 
+      }
+
+      .powered-by a {
+        text-decoration: none; 
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; 
+        }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; 
+        }
+        table[class=body] .content {
+          padding: 0 !important; 
+        }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table[class=body] .btn table {
+          width: 100% !important; 
+        }
+        table[class=body] .btn a {
+          width: 100% !important; 
+        }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; 
+        }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; 
+        }
+        table[class=body] .content {
+          padding: 0 !important; 
+        }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table[class=body] .btn table {
+          width: 100% !important; 
+        }
+        table[class=body] .btn a {
+          width: 100% !important; 
+        }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+    </style>
+  </head>
+  <body class="">
+    <span class="preheader">A weekly roundup of funded startups and the jobs they're hiring for.</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <!-- insert opening title below -->
+                        <h1>
+                          Funded & Hiring
+                        </h1>
+                        <h2 style="text-align:center">
+                          <strong>Sunday, 01/24/2021</strong>
+                        </h2>
+                        <h2>
+                          A weekly roundup of funded startups and the jobs they're hiring for.
+                        </h2>
+                        <h4>
+                          Forwarded from a friend? 
+                          <a href = 'https://mailchi.mp/95a7389a5d78/funded-and-hiring'>Subscribe</a> to stay up to date on the latest startup funding and job alerts.
+                        </h4>
+                        <!-- opening title ends -->
+                      </td>
+                    </tr>
+                    <!-- insert content below -->
+                    
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://ppro.com">PPRO</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/UQi6">$180 Million</a></strong></em>
+                            <p>
+                              PPRO, a London-based localized payments platform, raised 180 million at a valuation north of 1 billion from Euazeo, Sprints Capital and Wellington Management.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/ppro">
+                                  Engineering/Technology(18), Product(7), Legal/Compliance(5), Operations(4), Marketing(3), Finance/Accounting(3), Data(2), Sales/Business Development/Growth(2), Customer Success(2), Other(16)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/ydmC">Deliveroo</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/ydmC">$180 Million</a></strong></em>
+                            <p>
+                              Deliveroo, a British food delivery company, raised 180 million co-led by Durable Capital Partners and Fidelity at a valuation north of 7 billion, ahead of an anticipated London IPO.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/Deliveroo">
+                                  Customer Success(38), Operations(35), Engineering/Technology(32), Sales/Business Development/Growth(24), Marketing(19), Data(15), Product(14), HR/People(11), Finance/Accounting(10), Design(4), Content Creation(4), Remote(4), Supply Chain/Logistics(1), Other(58)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.tripactions.com">TripActions</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/tripactions-raises-155m-in-series-e-funding.html">$155 Million</a></strong></em>
+                            <p>
+                              TripActions, a Palo Alto, CA-based business travel and spend management platform, raised $155m in Series E growth funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/TripActions/jobs">
+                                  Engineering/Technology(15), Product(4), HR/People(4), Data(1), Design(1), Sales/Business Development/Growth(1), Marketing(1), Content Creation(1), Other(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.khealth.ai/">K Health</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.khealth.ai/">$132 Million</a></strong></em>
+                            <p>
+                              K Health, a New York-based primary care company, raised 132 million. GGV Capital, Valor Equity Partners and Kaiser Permanente co-led, and were joined by 14W, Max Ventures, Pico Partners, Marcy Venture Partners, Primary Venture Partners and BoxGroup.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/K-Health/jobs">
+                                  Engineering/Technology(11), Remote(6), Data(5), Product(4), Sales/Business Development/Growth(4), Operations(2), Marketing(2), Customer Success(2), HR/People(1), Legal/Compliance(1), Other(19)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://c212.net/c/link/?t=0&l=en&o=3039377-1&h=1711199811&u=https%3A%2F%2Fvoltacharging.com%2F&a=Volta">Volta</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/volta-raises-125m-in-series-d-financing.html">$125 Million</a></strong></em>
+                            <p>
+                              Volta, a San Francisco, CA-based provider of commerce-centric electric vehicle (EV) charging networks, raised a Series D financing of $125m.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Volta/jobs">
+                                  Engineering/Technology(7), Design(3), Product(3), Finance/Accounting(3), Data(2), Sales/Business Development/Growth(2), Marketing(2), Customer Success(2), Legal/Compliance(1), Remote(1), Other(3)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.aledade.com">Aledade</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/aledade-raises-100m-in-series-d-funding.html">$100 Million</a></strong></em>
+                            <p>
+                              Aledade, a Bethesda, Md.-based company enabling doctors to control health care, closed a $100m Series D funding round.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/aledade">
+                                  Remote(37), Engineering/Technology(17), Data(8), Sales/Business Development/Growth(5), Product(4), Operations(1), Marketing(1), Customer Success(1), Other(120)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/MjfZ">Imperfect Foods</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/MjfZ">$95 Million</a></strong></em>
+                            <p>
+                              Imperfect Foods, a San Francisco-based online food marketplace aimed at reducing food waste, raised 95 million in Series D funding co-led by Insight Partners and Norwest Venture Partners at a 700 million post-money valuation.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/imperfectfoods">
+                                  Supply Chain/Logistics(19), Remote(14), HR/People(13), Engineering/Technology(8), Product(7), Customer Success(3), Data(2), Design(2), Operations(1), Marketing(1), Content Creation(1), Other(43)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.VerveTx.com">Verve Therapeutics</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/verve-therapeutics-secures-94m-in-series-b-financing.html">$94 Million</a></strong></em>
+                            <p>
+                              Verve Therapeutics, a Cambridge, Mass.-based biotech company pioneering gene editing medicines to treat cardiovascular disease, closed a $94m Series B financing.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Verve-Therapeutics/jobs">
+                                  Engineering/Technology(4), Data(3), Content Creation(1), Finance/Accounting(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "/keyword/vera-therapeutics">Vera Therapeutics</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/FTg9">$80 Million</a></strong></em>
+                            <p>
+                              Vera Therapeutics, a South SF-based developer of treatments for immunological and inflammatory diseases, raised 80 million in Series C funding. Abingworth led, and was joined by Sofinnova Investments, Longitude Capital, Fidelity, Surveyor Capital, Octagon Capital, Kleiner Perkins, GV and Alexandria Venture Investments.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Vera-Therapeutics/jobs">
+                                  Product(1), Legal/Compliance(1), Finance/Accounting(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.meetsoci.com">SOCi</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/soci-raises-80m-in-series-d-funding.html">$80 Million</a></strong></em>
+                            <p>
+                              SOCi, a San Diego, CA-based marketing platform built for multi-location marketers, closed an $80m Series D funding round.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/SOCi/jobs">
+                                  Customer Success(17), Remote(7), Engineering/Technology(6), Marketing(5), Product(4), Sales/Business Development/Growth(4), Design(2), Operations(2), Data(1), Content Creation(1), Other(4)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://techcrunch.com/2020/12/03/everlywell-raises-175-million-to-expand-virtual-care-options-and-scale-its-at-home-health-testing/">Everlywell</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/S1iS">$75 Million</a></strong></em>
+                            <p>
+                              Everlywell, an Austin, Texas-based in-home health testing platform, raised 75 million in secondary funding from HealthQuest Capital. This is at the same 1.3 billion valuation as a recent Series D round from BlackRock, TCG, Foresite Capital, Greenspring Associates, Morningside Ventures, Portfolio and return backer Highland Capital Partners.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/everlywell">
+                                  Customer Success(14), Engineering/Technology(11), Sales/Business Development/Growth(10), Product(4), Marketing(4), Data(3), Operations(3), Finance/Accounting(3), Design(2), Supply Chain/Logistics(2), HR/People(1), Other(10)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.quali.com/">Quali</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/quali-raises-54m-in-funding.html">$54 Million</a></strong></em>
+                            <p>
+                              Quali, an Austin, Texas-based cloud infrastructure automation company, raised $54m in funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Quali/jobs">
+                                  Sales/Business Development/Growth(5), Engineering/Technology(2), Remote(2), Design(1), Product(1), Other(3)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://Removery.com">Removery</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/removery-receives-50m-investment-from-elliott-investment-management.html">$50 Million</a></strong></em>
+                            <p>
+                              Removery, an Austin, Texas-based specialized provider of tattoo removal, change, and fade services in North America, received a $50m strategic investment from affiliates of Elliott Investment Management L.P.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Removery/jobs">
+                                  Sales/Business Development/Growth(3), Customer Success(3), Design(1), HR/People(1), Other(10)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.vero-biotech.com">Vero Biotech LLC</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/vero-biotech-secures-50m-in-funding.html">$50 Million</a></strong></em>
+                            <p>
+                              Vero Biotech LLC, an Atlanta, Georgia-based biotechnology company, closed a senior secured term loan of $50m.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Vero-Biotech-LLC/jobs">
+                                  Engineering/Technology(17), Remote(3), Product(1), Legal/Compliance(1), Supply Chain/Logistics(1), Other(14)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://istox.com/">iStox</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/PaY2">$50 Million</a></strong></em>
+                            <p>
+                              iStox, a Singapore-based digital securities platform, raised 50 million in Series A funding from Development Bank of Japan, JIC Venture Growth Investments, Juroku Bank, Mobile Internet Capital, Singapore Exchange, Tokai Tokyo Financial Holdings and Hanwha Asset Management.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/istox">
+                                  Engineering/Technology(6), Design(2), Legal/Compliance(1), Other(7)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://multiverse.io">Multiverse</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/TyqK">$44 Million</a></strong></em>
+                            <p>
+                              Multiverse, a British tech apprenticeship platform, raised 44 million in Series B funding. General Catalyst led, and was joined by GV, Audacious Ventures, Latitude, SemperVirens. Index Ventures and Lightspeed Venture Partners.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://apply.workable.com/multiverse">
+                                  Engineering/Technology(2), Customer Success(2), Data(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.plexium.com/">Plexium</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.plexium.com/">$35 Million</a></strong></em>
+                            <p>
+                              Plexium, a San Diego-based developer of protein-degrading therapeutics, raised 35 million in new Series A funding. Lux Capital and Pivotal BioVentures co-led, and were joined by The Column Group and DCVC Bio.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://apply.workable.com/plexium">
+                                  Engineering/Technology(19), Data(10), Product(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://axios.link/2Do6">Indy</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/2Do6">$35 Million</a></strong></em>
+                            <p>
+                              Indy f.k.a. Georges, a French accounting automation app for freelancers and small businesses, raised 35 million. Singular led, and was joined by return backers Alven Capital and Kerala.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Indy/jobs">
+                                  Remote(3), Content Creation(2), Sales/Business Development/Growth(1), Marketing(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://hellobrigit.com/">Brigit</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/brigit-raises-35m-in-series-a-funding.html">$35 Million</a></strong></em>
+                            <p>
+                              Brigit, a NYC-based provider of a holistic financial health app, raised $35m in Series A funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/brigit">
+                                  Engineering/Technology(7), Data(3), Product(3), Design(1), Operations(1), Legal/Compliance(1), Other(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.shippeo.com/">Shippeo</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.shippeo.com/">$32 Million</a></strong></em>
+                            <p>
+                              Shippeo, a Paris-based transportation visibility platform, raised 32 million. Battery Ventures was joined by insiders NGP Capital, ETF Partners, Partech and Bpifrance.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://careers.smartrecruiters.com/Shippeo">
+                                  Engineering/Technology(6), Sales/Business Development/Growth(6), Product(5), Operations(5), Data(4), Customer Success(4), Design(1), Other(5)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://wasabi.com">Wasabi</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/wasabi-raises-27-5m-in-debt-financing.html">$27.5 Million</a></strong></em>
+                            <p>
+                              Wasabi, a Boston, MA-based hot cloud storage company, raised $27.5m in debt financing.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Wasabi/jobs">
+                                  Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://boldcommerce.com/">Bold Commerce</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/bold-commerce-raises-27m-in-series-b-funding.html">$27 Million</a></strong></em>
+                            <p>
+                              Bold Commerce, an Austin, TX and Winnipeg, Manitoba-based ecommerce technology company that powers anywhere commerce for the world’s leading omnichannel retailers and emerging DTC brands, closed its $27m USD ($35m CAD) Series B funding round.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/boldcommerce">
+                                  Marketing(21), Product(15), Engineering/Technology(12), Content Creation(9), Design(6), Data(3), Customer Success(3), Sales/Business Development/Growth(2), Operations(2), HR/People(1), Finance/Accounting(1), Other(17)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://apricushealth.com/">Apricus Health</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/apricus-health-receives-20m-from-virgo-investment-group.html">$20 Million</a></strong></em>
+                            <p>
+                              Apricus Health, a Scottsdale, AZ-based innovative healthcare company, received $20m from Virgo Investment Group.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Apricus-Health/jobs">
+                                  Other(3)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://stackpulse.com/">StackPulse</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/stackpulse-raises-28m-in-series-a-funding.html">$20 Million</a></strong></em>
+                            <p>
+                              StackPulse, a Portland, Ore.-based company modernizing software reliability with engineering best practices, raised $20m in Series A funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/StackPulse/jobs">
+                                  Product(1), Other(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.finsmes.com/2021/01/opendrives-raises-up-to-20m-in-series-b-funding.html">OpenDrives</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/opendrives-raises-up-to-20m-in-series-b-funding.html">$20 Million</a></strong></em>
+                            <p>
+                              OpenDrives, Inc., a Los Angeles, CA-based provider of enterprise-grade, hyper-scalable network-attached-storage (NAS) solutions, raised up to $20m in Series B funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/OpenDrives/jobs">
+                                  Engineering/Technology(5), Remote(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.rewind.com/">Rewind</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://www.rewind.com/">$15 Million</a></strong></em>
+                            <p>
+                              Rewind, a Canadian cloud data security startup, raised US15 million in Series A funding led by Inovia Capital.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/rewind">
+                                  Engineering/Technology(4)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://curtsyapp.com/">Curtsy</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/curtsy-raises-11m-in-series-a-funding.html">$11 Million</a></strong></em>
+                            <p>
+                              Curtsy, a San Francisco, CA-based app that lets women buy and sell clothing, shoes, and accessories from their phones, raised $11m in Series A funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/curtsy">
+                                  Engineering/Technology(3), Design(1), Product(1), Marketing(1), HR/People(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.motorefi.com/">MotoRefi</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/motorefi-raises-10m-in-series-a-1-funding.html">$10 Million</a></strong></em>
+                            <p>
+                              MotoRefi, an Arlington, VA-based auto refinancing startup, raised $10m in Series A-1 funding round.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://boards.greenhouse.io/MotoRefi">
+                                  Engineering/Technology(5), Data(3), HR/People(2), Product(1), Sales/Business Development/Growth(1), Operations(1), Legal/Compliance(1), Finance/Accounting(1), Remote(1), Other(8)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://prosapient.com">ProSapient</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "http://axios.link/tkSJ">$10 Million</a></strong></em>
+                            <p>
+                              ProSapient, a London-based expert network management SaaS, raised 10 million led by Smedvig Capital.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://apply.workable.com/prosapient">
+                                  Other(5)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "https://www.bearflagrobotics.com">Bear Flag Robotics</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/bear-flag-robotics-raises-7-9m-in-seed-extension-round.html">$7.9 Million</a></strong></em>
+                            <p>
+                              Bear Flag Robotics, a Newark, Calif.-based agtech company, raised $7.9m in seed extension funding round.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://jobs.lever.co/bearflagrobotics">
+                                  Engineering/Technology(4), Remote(2), Other(5)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://www.xphealth.co/">XP Health</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/xp-health-launches-with-5m-in-seed-funding.html">$5 Million</a></strong></em>
+                            <p>
+                              XP Health, a Palo Alto, CA-based artificial intelligence-powered vision benefits platform covering employees and their families, raised a total of $5m in seed funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/XP-Health/jobs">
+                                  Other(2)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <tr>
+                          <td>
+                            <h3>
+                              <a href = "http://bookkeeper360.com">Bookkeeper360</a>
+                            </h3>
+                            <strong>Funding Amount</strong>: <em><strong><a href = "https://www.finsmes.com/2021/01/bookkeeper360-raises-1m-in-seed-funding.html">$1 Million</a></strong></em>
+                            <p>
+                              Bookkeeper360, a Long Island, N.Y.-based fintech company focused on accounting and advisory solutions for small businesses, raised $1m in seed funding.
+                            </p>
+                            <p>
+                              <strong>Hiring For:</strong>
+                                <a href = "https://www.indeed.com/cmp/Bookkeeper360/jobs">
+                                  Customer Success(1)
+                                </a>
+                            </p>
+                          </td>
+                        </tr>
+                    <!-- content ends here -->
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <br> Want to contact the author? Reply directly to this email or reach out on <a href="https://www.linkedin.com/in/thestevenwang/">LinkedIn</a>.
+                    <br> Don't like these emails? <a href="*|UNSUB|*">Unsubscribe</a>.
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
